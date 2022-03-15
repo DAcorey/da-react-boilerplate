@@ -410,11 +410,11 @@ yarn remove redux react-redux redux-thunk
 * [React Router v6 API Reference](https://reactrouter.com/docs/en/v6/api)
 * [React Router v6 Main Concepts](https://reactrouter.com/docs/en/v6/getting-started/concepts)
 
-Below is an [overview of React Router v6](#react-router-v6-overview) and a section for [removing React Router v6](#removing-react-router).
+Below is an [overview of React Router v6](#react-router-v6-overview) and a section for [removing React Router](#removing-react-router).
 
 ### React Router v6 Overview
 
-**This boilerplate uses the latest React Router version, v6** For those who are familiar with earlier versions of React Router, here's a run down of the latest and greatest from React Router.
+**This boilerplate uses the latest React Router version, v6.** For those who are familiar with earlier versions of React Router, here's a run down of the latest and greatest from React Router.
 
 **First off, check out the above [React Router v6 Overview](https://reactrouter.com/docs/en/v6/getting-started/overview).** *Everything here is simply a reiteration of key points in that document.*
 
@@ -672,10 +672,11 @@ yarn remove react-router-dom
 # Author(s)
 
 [Dragon Army](https://dragonarmy.com/)
-[Corey Mitchell](https://github.com/DAcorey)
+
+[Corey Mitchell of Dragon Army](https://github.com/DAcorey)
 
 
-# Create React App Standard Docs
+## Create React App Standard Docs
 
 Everything from this point forward is the standard README docs that come with all projects bootstrapped with Create React App. They have been left  in this document for future references.
 
