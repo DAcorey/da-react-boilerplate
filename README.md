@@ -146,14 +146,15 @@ Must have Node.js installed to run. If you need to install Node.js, please refer
     yarn start
     ```
 
-The application opens up a standard looking [create-react-app](https://github.com/facebook/create-react-app#creating-an-app) landing page. The only change is an extra line which should read "Hello World! From Redux!".
-<sub><sup>This line shows that redux is properly set up and working.</sup></sub>
+The application opens up a standard looking [create-react-app](https://github.com/facebook/create-react-app#creating-an-app) landing page. The only changes are an extra line which should read "Hello World! From Redux!". *This line shows that Redux is properly set up and working.*
+
+Below that should be a simple tab container that the user can select between. *This component shows that React Router is properly set up and working.*
 
 Example:
 
-![landing_page](https://user-images.githubusercontent.com/37916145/158096225-5f91c6a4-0f53-4ace-857a-9f131111630e.png)
+![landing_page](https://user-images.githubusercontent.com/37916145/158306638-3b97f93e-c966-4f86-ae52-8e8cb6c4d2b2.png)
 
-<sub><sup>If this line is not displayed, then you may check the console for logs from the reducer. These logs will demonstrate that the action is reaching the reducer.</sup></sub>
+If this line is not displayed, then you may check the console for logs from the reducer. These logs will demonstrate that the action is reaching the reducer.
 
 ![landing_page_console](https://user-images.githubusercontent.com/37916145/158096997-5f541ee4-fcd5-4128-84fc-9f7332756766.png)
 
@@ -181,13 +182,13 @@ Inside this folder is a `store.js` file and two directories, `/actions` and `/re
 
 Inside the `/actions` directory will be two files, `types.js` and `exampleActions.js`.
 
-* The `types.js` file will be where all of the action types are defined and exported. You will find a single export inside, the `EXAMPLE_ACTION`. <sub><sup>You can either put ALL action types in this file, or make a directory for every action set to have it's own `type.js` folder.</sup></sub>
+* The `types.js` file will be where all of the action types are defined and exported. You will find a single export inside, the `EXAMPLE_ACTION`. *You can either put ALL action types in this file, or make a directory for every action set to have it's own `type.js` folder.*
 
 * The `exampleActions.js` file can be used as a boilerplate for any other action(s) file that needs to be made. This file imports the example action type, creates an action that dispatches an event to the example reducer and exports it to be used by the desired component.
 
 This brings us to the `/reducers` directory. Inside this directory is also two files, `index.js` and `exampleReducer.js`.
 
-* The `index.js` file is used for importing all of the separate reducers and combining them into a single reducer for the data store. <sub><sup>This connection is already made, so this file will only be used for importing and adding a new reducer to the `combineReducers` method.</sup></sub>
+* The `index.js` file is used for importing all of the separate reducers and combining them into a single reducer for the data store. *This connection is already made, so this file will only be used for importing and adding a new reducer to the `combineReducers` method.*
 
 * The `exampleReducer.js` file, much like the `exampleAction.js` file, can be used as a boilerplate for any other reducers that need to be made. This file imports the example action type, sets an initial state and dispatches an action based upon the provided action type, which will then update the state.
 
@@ -195,9 +196,9 @@ With all of this set up, the component that desires to use either the exported a
 
 An example of how to create and use a new action, reducer and state can be found below in the [How to Use](#how-to-use) section.
 
-The data flow for Redux will look like so:
+The basic data flow for Redux will look like so:
 
-**Insert image here**
+![Basic Redux Flow](https://user-images.githubusercontent.com/37916145/158308939-bcedf2df-5650-4a8d-91f2-df1a25c8d54a.png)
 
 
 ### How to Use
@@ -670,8 +671,8 @@ yarn remove react-router-dom
 
 # Author(s)
 
-[Dragon Army]()
-[Corey Mitchell]()
+[Dragon Army](https://dragonarmy.com/)
+[Corey Mitchell](https://github.com/DAcorey)
 
 
 # Create React App Standard Docs
